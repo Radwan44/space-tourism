@@ -1,0 +1,129 @@
+/* start variable */
+:root {
+    
+}
+/* end variable */
+
+/* Start Global Rules */
+body {
+    background-image: url('../destination/background-destination-mobile.jpg');
+}
+/* اخذت هذه القياسات من حدا عامل نفس المشروع اقصد قياسات الميديا لخلفية الشاشة*/
+@media (min-width: 35rem) {
+    body {
+        background-image: url('../destination/background-destination-tablet.jpg');
+    }
+}
+@media (min-width: 52rem) {
+    body {
+        background-image: url('../destination/background-destination-desktop.jpg');
+    }
+}
+/* end Global Rules */
+
+/* start tabs */
+#mainTitle {
+    text-transform: var(--text-transform-uppercase);
+    padding-left: var(--padding-left);
+    font-size: 28px;
+    letter-spacing: 2.7px;
+}
+#containerTabsAndImg {
+    display: grid;
+    /* grid-template-areas: "g q"; */
+    /* حطيت حرفين عشوائيات للgrid-template-areas وما حطيت اي grid-area للعناصر ومع ذلك اشتغل */
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    padding-left: var(--padding-left);
+    margin-top: 120px;
+}
+#containerTabsAndImg img {
+    /* grid-area: img; */
+    justify-self: center;
+}
+#containerTabsAndImg nav {
+    display: flex;
+    gap: 37px;
+    /* grid-area: nav; */
+    font-size: 20px;
+    text-transform: var(--text-transform-uppercase);
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+#containerTabsAndImg h1 {
+    /* grid-area: h1; */
+}
+#containerTabsAndImg .tab:not(#tabOne) {
+    display: none;
+}
+.bigWord {
+    margin-top: 40px;
+    text-transform: var(--text-transform-uppercase);
+}
+.boxText {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.bigWord {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 110px;
+    font-weight: normal;
+}
+#mainText {
+    /* grid-area: mainText; */
+    color: var(--main-color);
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    line-height: var(--line-height-32px);
+    padding-right: 40px;
+}
+#mainText span {
+    text-transform: var(--text-transform-capitalize);
+}
+#line, #distanceAndTime {
+    display: flex;
+}
+#line {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 20%);
+    margin-top: 25px;
+}
+#distanceAndTime {
+    display: flex;
+    gap: 20%;
+    margin-top: 30px;
+    font-size: 20px;
+    text-transform: var(--text-transform-uppercase);
+}
+#distanceAndTime div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#distanceAndTime #text {
+    color: var(--main-color);
+}
+#distanceAndTime .number {
+    text-transform: var(--text-transform-uppercase);
+}
+/* start media */
+@media(0 < width < 1030px) {
+    #containerTabsAndImg nav, #line, #distanceAndTime {
+        justify-content: center;
+    }
+    #containerTabsAndImg nav {
+        margin-top: 80px;
+    }
+    .boxText {
+        align-items: center;
+        text-align: center;
+    }
+}
+@media(width >= 1030px) {
+    #containerTabs {
+        padding-right: 160px;
+    }
+}
+/* end tabs */ 

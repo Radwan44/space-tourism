@@ -1,0 +1,99 @@
+/* Start Global Rules */
+body {
+    background-image: url('../home/background-home-mobile.jpg');
+}
+/* اخذت هذه القياسات من حدا عامل نفس المشروع اقصد قياسات الميديا لخلفية الشاشة*/
+@media (min-width: 35rem) {
+    body {
+        background-image: url('../home/background-home-tablet.jpg');
+    }
+}
+@media (min-width: 52rem) {
+    body {
+        background-image: url('../home/background-home-desktop.jpg');
+    }
+}
+/* end Global Rules */
+/* start meta descritions */
+#metaDescription {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 96px;
+    text-align: center;
+    margin-top: 157px;}
+#boxText {
+    text-align: center;
+    max-width: 500px;
+    margin-left: 20px;
+}
+#sectionOne {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+#bigWord {
+ /* حطينا الطول لنقلص المساحة الي عملها*/
+    font-family: 'Bellefair', sans-serif;
+    font-size: 5em;
+    text-transform: uppercase;
+    margin-top: 10px !important;
+
+    /* 
+  سبب وضع المارجن توب هو انه العنصره عنده مساحة علوية زائدة
+    */
+}
+#sectionTwo {
+    font-family: 'Barlow', sans-serif;
+}
+button {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 81px;
+    border: none;
+    outline: none;
+    font-family: 'Bellefair', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1.25;
+    cursor: pointer;
+}
+/* start media */
+@media(1200px > width > 637px) {
+    #metaDescription {
+        justify-content: space-around;
+    }
+    #sectionOne {
+        font-size: 23px;
+    }
+    #bigWord {
+        margin-top: -46px;
+        font-size: 105px;
+    }
+    #sectionTwo {
+        font-size: 18px;
+    }
+    button {
+        height: 200px;
+        width: 200px;
+    }
+}
+@media(width > 1200px) {
+    #sectionOne {
+        font-size: 28px;
+    }
+    #bigWord {
+        margin-top: -71px;
+        font-size: 150px;
+    }
+    #sectionTwo {
+        font-size: 20px;
+    }
+    button {
+        height: 274px;
+        width: 274px;
+        font-size: 32px;
+    }
+}
+/* end media */
+
+/* end meta descritions */

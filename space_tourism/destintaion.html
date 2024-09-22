@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" id="#DESTINATION">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="css\all.min.css">
+    <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" href="css\destination.css">
+    <title> destintaion </title>
+</head>
+<body> 
+  <!-- start header -->
+  <header>
+    <div id="logo"></div>
+    <i class="fa-solid fa-bars" id="openMenuIcon"></i>
+    <span id="lineInHeader"></span>
+    <nav id="nav" class="navHorizontal navVertical">
+      <span><a href="home.html"> <span> 00 </span> HOME </a></span>
+      <span id="linkDestination"><a href="destintaion.html"> <span> 01 </span>DESTINATION</a></span>
+      <span><a href="crew.html"> <span> 02 </span>CREW</a></span>
+      <span><a href="technology.html"> <span> 03 </span>TECHNOLOGY</a></span>
+      <i class="fa-solid fa-xmark" id="closedIcon" ></i>
+    </nav>
+  </header>
+  <!-- end header -->
+
+  <div id="mainTitle"> <span> 01 </span> pick your destination </div>
+  <div id="containerTabsAndImg">
+    <img id="imgPlanet" src="destination\image-moon.webp" alt="">
+
+    <div id="containerTabs">
+      <nav>
+        <span> Moon </span>
+        <span> Mars </span>
+        <span> Europa </span>
+        <span> Titan </span>
+      </nav>
+      <!-- يفضل نستخدم كان buttons instead of span -->
+
+    <!-- start tab one-->
+    <div id="tabOne" class="tab">
+      <div class="boxText">
+        <h1 class="bigWord"> moon </h1>
+        <p id="mainText"> 
+          <span> See </span> our planet as you’ve never seen it before. <span>A</span> perfect relaxing trip away to help regain perspective and come back refreshed.
+           <span>While</span> you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites. 
+        </p>
+      </div>
+    </div>
+    <!-- end tab one-->
+    
+    <!-- start tab two -->
+    <div id="tabTwo" class="tab">
+      <div class="boxText">
+        <h1 class="bigWord"> Mars </h1>
+        <p id="mainText"> <span >don't</span> forget to packs your hiking boots. 
+          <span > you </span> 'll need them to tackle <span > </span> olympus <span > moons </span>,
+           the tallest p;anetary mountain in our solar system. <span > it's </span> two and a half times the sizwe of <span > veerest </span>! 
+          </p>
+      </div>
+      </div>
+    <!-- end tab two -->
+ 
+    <!-- start tab three-->
+    <div id="tabThree" class="tab">
+      <div class="boxText">
+        <h1 class="bigWord"> Europa </h1>
+        <p id="mainText">
+          <span>The</span> smallest of the four Galilean moons orbiting Jupiter, <span>Europa</span> is a winter lover’s dream. <span>With</span> an icy surface,
+          it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.
+        </p>
+      </div>
+    </div>
+    <!-- end tab three -->
+    <!-- start tab four -->
+    <div id="tabFour" class="tab">
+      <div class="boxText">
+        <h1 class="bigWord"> Titan </h1>
+        <p id="mainText">
+          <span>The</span> only moon known to have a dense atmosphere other than <span>Earth</span>,
+           <span>Titan</span> is a home away from home (just a few hundred degrees colder!).
+            <span>As</span> a bonus, you get striking views of the <span>Rings</span> of <span>Saturn</span>.
+        </p>
+      </div>
+    </div>
+    <!-- end tab four -->
+    <div id="line"></div>
+    <div id="distanceAndTime">
+      <div id="distance">
+        <span class="text"> Avg. Distance </span>
+        <span id="numberDistance" class="number"> 384,400 km </span>
+      </div>
+      <div id="time">
+        <span class="text"> Est. Travel </span>
+        <span id="numberTime" class="number"> 3 days </span>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <script src="JAVASCRIPT\main.js"></script>
+  <script src="JAVASCRIPT\destination.js"></script>
+</body>
+</html>

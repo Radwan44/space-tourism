@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #D0D6F9;
+    --secondary-color: #ffffff;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    background: url('../home/background-home-mobile.jpg');
+    background-size: cover;
+    color: white; /* مشان اذا الخلفية كانت سوداء يبين الخط قبل ما نعمله أي تعيين*/
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+}
+p {
+    margin: 0;
+}
+
+/* START HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+header #logo {
+    height: 40px;
+    width: 40px;
+    background: url('../shared/logo.svg');
+    background-color: var(--secondary-color);
+    background-size: cover;
+    border-radius: 50%;
+}
+header i {
+    color: var(--main-color);
+    font-size: 24px;
+}
+/* END HEADER */
+
+/* start meta descritions */
+#metaDescription {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    margin-top: 96px;
+    text-align: center;
+}
+#boxText {
+    display: grid;
+    align-items: center;
+    gap: 16px;
+}
+#sectionOne {
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 2.7px;
+}
+#bigWord {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 80px;
+    margin-top: -30px;
+    /* 
+  سبب وضع المارجن توب هو انه العنصره عنده مساحة علوية زائدة
+    */
+} 
+#sectionTwo {
+    min-width: 335px;
+    max-width: 361.5px;
+    font-family: "Barlow", sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+}
+#sectionOne, #sectionTwo {
+    color: var(--main-color);
+}
+/* end meta descritions */
+button {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 81px;
+    border: none;
+    outline: none;
+    font-family: 'Bellefair', sans-serif;
+    font-size: 20;
+    letter-spacing: 1.25;
+}
+

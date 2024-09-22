@@ -1,0 +1,140 @@
+/* Start Variables */
+:root {
+    --main-color: #D0D6F9;
+    --secondary-color: #ffffff;
+    --text-transform-uppercase: uppercase;
+    --text-transform-capitalize: capitalize;
+    --padding-left: 30px;
+    --line-height-32px: 32px;
+    --background-transparent-color: rgba(255, 255, 255, 4%);
+    --backdrop-filter: blur(40.7742px);
+}
+/* END Variables */
+
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+}
+body {
+    /* height: 100vh; */
+    background-size: cover;
+    color: white; /* مشان اذا الخلفية كانت سوداء يبين الخط قبل ما نعمله أي تعيين*/
+    margin: 0;
+}
+@media (min-width: 35rem) {
+    body {
+        height: fit-content;
+    }
+}
+/* @media (min-width: 52rem) {
+    body {
+        height: 100vh;
+    }
+} */
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+p, h1 {
+    margin: 0;
+}
+/* End Global Rules */
+
+/* START HEADER */
+header {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 76px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+}
+header #logo {
+    height: 40px;
+    width: 40px;
+    background: url('../shared/logo.svg');
+    background-color: var(--secondary-color);
+    background-size: cover;
+    border-radius: 50%;
+}
+header #openMenuIcon {
+    color: var(--main-color);
+    font-size: 24px;
+    cursor: pointer;
+}
+#nav {
+    position: absolute;
+    right: 0;
+    background-color:  var(--background-transparent-color);
+    backdrop-filter: var(--backdrop-filter);
+    letter-spacing: 2.7px;
+    font-size: 24px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* start media */
+ @media(0 < width < 1164px) {
+    #lineInHeader {
+        display: none;
+    }
+    .navVertical {
+        display: none;
+        height: 100vh;
+        /* position: absolute; */
+        top: 0;
+        /* right: 0; */
+        gap: 32px;
+        flex-direction: column;
+        padding-top: 118px;
+        padding-left: 32px;
+        padding-right: 152px;
+    }
+    #closedIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 34px;
+        padding-right: 26px;
+        font-size: 26px;
+        cursor: pointer;
+    }
+}
+@media(width >= 1164px) {
+    header {
+        padding-top: 40px;
+        padding-left: 55px;
+        padding-right: 55px;
+
+    }
+    header #logo {
+        height: 48px;
+        width: 48px;
+    }
+    #lineInHeader {
+        position: absolute;
+        height: 1px;
+        width: 30.24%;
+        background-color: #979797;
+        opacity: 30%;
+        transform: translateX(122px);
+    }
+    #openMenuIcon, #closedIcon {
+        display: none;
+    }
+    .navHorizontal {
+        gap: 48px;
+        padding-right: 165px;
+        padding-left: 123px;
+        padding-top: 38px;
+        padding-bottom: 38px;
+    }
+    
+}
+/* end media */
+/* END HEADER */
+
+
+

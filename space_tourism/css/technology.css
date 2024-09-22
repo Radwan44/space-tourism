@@ -1,0 +1,99 @@
+/* Start Global Rules */
+body {
+    background-image: url('../technology/background-technology-mobile.jpg');
+}
+/* اخذت هذه القياسات من حدا عامل نفس المشروع اقصد قياسات الميديا لخلفية الشاشة*/
+@media (min-width: 35rem) {
+    body {
+        background-image: url('../technology/background-technology-tablet.jpg');
+    }
+}
+@media (min-width: 52rem) {
+    body {
+        background-image: url('../technology/background-technology-desktop.jpg');
+    }
+}
+/* end Global Rules */
+#mainTitle {
+    text-transform: var(--text-transform-uppercase);
+    padding-left: var(--padding-left);
+    font-size: 28px;
+    letter-spacing: 2.7px;
+}
+#containerTabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+    margin-top: 20px;
+    text-align: center;
+}
+#innerContainer {
+    order: 0;
+}
+#containerTabs nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#containerTabs nav button {
+    height: 100px;
+    width: 100px;
+    font-size: 22px;
+    border: solid 1px white;
+    border-radius: 50%;
+    color: white;
+    background-color:  var(--background-transparent-color);
+    backdrop-filter: var(--backdrop-filter);
+    cursor: pointer;
+}
+#containerTabs .tab {
+    margin-top: 20px;
+}
+.tab:not(#tabOne) {
+    display: none;
+}
+#terminology {
+    text-transform: var(--text-transform-uppercase);
+}
+.boxText {
+    height: 100%;
+}
+#bigWord {
+    font-size: 28px;
+    font-weight: normal;
+    font-family: 'Bellefair', sans-serif;
+    text-transform: var(--text-transform-uppercase);
+    margin-top: 15px;
+    margin-bottom: 23px;
+}
+#mainText {
+    max-width: 500PX;
+    line-height: 40px;
+}
+#containerTabs img {
+    max-width: 100%;
+}
+@media(width > 1164px) {
+    #bigWord {
+        font-size: 56px;
+    }
+    #containerTabs {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: start;
+    }
+    .innerContainer {
+        order: 0;
+        padding-left: 60px;
+    }
+    #containerTabs nav {
+        justify-content: start;
+    }
+    #containerTabs img {
+        order: 1;
+    }
+}
+
+
+
